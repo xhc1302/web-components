@@ -1,6 +1,6 @@
 import React from 'react'
 import { Modal } from 'antd'
-import { DownloadWrapper } from '@aiot/web-components'
+import DownloadWrapper from '../download-wrapper'
 import classNames from 'classnames/bind'
 import styles from './styles.styl'
 

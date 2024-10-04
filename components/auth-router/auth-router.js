@@ -1,6 +1,6 @@
 import React from 'react'
 import { Route, Redirect } from 'react-router-dom'
-import { StateWrapper } from '@aiot/web-components'
+import StateWrapper from '../state-wrapper'
 
 export default class AuthRouter extends React.Component {
   static defaultProps = {

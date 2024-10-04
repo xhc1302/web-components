@@ -4,7 +4,7 @@ import { Layout, Dropdown, Input, Form, message } from 'antd'
 import classNames from 'classnames/dedupe'
 import { JSEncrypt } from 'jsencrypt'
 import { PUBLIC_KEY } from '@config'
-import { ZModal } from '@aiot/web-components'
+import ZModal from '../z-modal'
 import { Validator } from '@utils'
 import styles from './styles.styl'
 

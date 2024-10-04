@@ -3,7 +3,10 @@ import { Upload, message, Drawer, Button } from 'antd'
 import { LoadingOutlined } from '@ant-design/icons'
 import classNames from 'classnames/dedupe'
 import store from 'store'
-import { ZTable, ZModal, FullStateLoading } from '@aiot/web-components'
+import FullStateLoading from '../full-state-loading'
+import ZModal from '../z-modal'
+import ZTable from '../z-table'
+
 import { API_HOST } from '../../config'
 import styles from './styles.styl'
 

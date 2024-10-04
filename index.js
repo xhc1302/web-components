@@ -18,6 +18,7 @@ import ZPhoneWrapper from './components/z-phone'
 import ZSelect from './components/z-select'
 import ZPagination from './components/z-pagination'
 import ZDatePicker from './components/z-datepicker'
+import FullStateLoading from './components/full-state-loading'
 
 export {
   AuthRouter,
@@ -46,5 +47,6 @@ export {
   ZPhoneWrapper,
   ZSelect,
   ZPagination,
-  ZDatePicker
+  ZDatePicker,
+  FullStateLoading
 }
