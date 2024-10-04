@@ -6,6 +6,7 @@ import PageWrapper from './components/page-wrapper'
 import PermissionWrapper from './components/permission-wrapper'
 import ZModal from './components/z-modal'
 import ZDetailCard from './components/z-detailcard'
+import ZDetailCardNew from './components/z-detailcard-new'
 import ZPopconfirm from './components/z-popconfirm'
 import ZRadio from './components/z-radio'
 import ZTable from './components/z-table'
@@ -48,5 +49,6 @@ export {
   ZPagination,
   ZDatePicker,
   FullStateLoading,
-  ZButton
+  ZButton,
+  ZDetailCardNew
 }
