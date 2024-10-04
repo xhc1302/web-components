@@ -18,6 +18,7 @@ import ZSelect from './components/z-select'
 import ZPagination from './components/z-pagination'
 import ZDatePicker from './components/z-datepicker'
 import FullStateLoading from './components/full-state-loading'
+import ZButton from './components/z-button'
 
 export {
   AuthRouter,
@@ -46,5 +47,6 @@ export {
   ZSelect,
   ZPagination,
   ZDatePicker,
-  FullStateLoading
+  FullStateLoading,
+  ZButton
 }
