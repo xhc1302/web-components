@@ -4,7 +4,6 @@ import PageModule from './components/page-module'
 import StateWrapper, { StateEmpty, StateError, StateLoading, StateUnAuthorized, ComponentEmpty } from './components/state-wrapper'
 import PageWrapper from './components/page-wrapper'
 import PermissionWrapper from './components/permission-wrapper'
-import ZUpload from './components/z-upload'
 import ZModal from './components/z-modal'
 import ZDetailCard from './components/z-detailcard'
 import ZPopconfirm from './components/z-popconfirm'
@@ -31,7 +30,6 @@ export {
   ComponentEmpty,
   PageWrapper,
   PermissionWrapper,
-  ZUpload,
   ZModal,
   ZDetailCard,
   ZPopconfirm,
