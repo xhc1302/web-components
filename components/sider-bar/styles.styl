@@ -1,0 +1,286 @@
+.ant-menu-inline-collapsed-tooltip
+  padding-left 0
+
+  .ant-tooltip-arrow
+    display none
+
+  .ant-tooltip-inner
+    position relative
+    padding 0 24px
+    height 44px
+    color rgba(255, 255, 255, 0.65)
+    min-width 132px
+    min-height auto
+    line-height 44px
+    background #001529
+    cursor pointer
+
+    .menu-item-inner
+      &:hover
+        color #fff
+
+      &.menu-item-inner-light
+        position absolute
+        top 0
+        left 0
+        padding 0 24px
+        width 100%
+        height 100%
+        color #303133
+        background #fff
+        border-radius 4px
+
+    .menu-icon
+      display none
+
+.app-sider-bar
+  height 100vh
+  background #090E0F !important
+
+  &.with-header-gap
+    height calc(100vh - 80px)
+
+  .ant-menu
+    background #090E0F !important
+
+    li
+      margin-bottom 8px !important
+
+  .ant-menu-dark
+    background #090E0F
+
+  .ant-menu-submenu-selected
+    color #14A9FF !important
+
+    .ant-menu-title-content
+      // background linear-gradient(270deg, rgba(50, 62, 66, 0) 0%, rgba(50, 62, 66, 0.65) 49%, rgba(50, 62, 66, 0) 100%)
+
+    span
+      color inherit
+
+      &:hover
+        color #14A9FF !important
+
+  &.ant-menu-sub
+    background #090E0F
+
+  .ant-menu-item
+    margin 0 !important
+    height 52px
+    color #EBECEC
+    line-height 52px
+
+  .ant-menu-item-selected
+    background-color transparent !important
+
+    .ant-menu-title-content
+      background url('https://aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-web/%E5%B7%A6%E4%BE%A7%E5%AF%BC%E8%88%AA%E9%80%89%E4%B8%ADbg%402x.png') no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-web/%E5%B7%A6%E4%BE%A7%E5%AF%BC%E8%88%AA%E9%80%89%E4%B8%ADbg%402x.png') no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-web/%E5%B7%A6%E4%BE%A7%E5%AF%BC%E8%88%AA%E9%80%89%E4%B8%ADbg%402x.png') no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-web/%E5%B7%A6%E4%BE%A7%E5%AF%BC%E8%88%AA%E9%80%89%E4%B8%ADbg%402x.png') no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-web/%E5%B7%A6%E4%BE%A7%E5%AF%BC%E8%88%AA%E9%80%89%E4%B8%ADbg%402x.png') no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-web/%E5%B7%A6%E4%BE%A7%E5%AF%BC%E8%88%AA%E9%80%89%E4%B8%ADbg%402x.png') no-repeat
+      background-color transparent !important
+      background-size 100% 80%
+      color #14A9FF !important
+      margin-left -42px
+      background-position 0px 6px
+      height 100%
+
+      a
+        color #14A9FF
+        margin-left 42px
+
+        &:hover
+          color #14A9FF !important
+
+  .ant-menu-submenu
+    .ant-menu-item
+      margin 0 !important
+      height 52px
+      color #EBECEC
+      line-height 42px
+
+      a:hover
+        color inherit
+
+      .menu-item-inner
+        padding-left 6px
+        padding-bottom 10px
+
+  .ant-menu-sub
+    .ant-menu-item
+      padding-left 52px !important
+      color #EBECEC
+
+      a
+        color inherit
+
+        &:hover
+          color #797C7D !important
+
+    .ant-menu-item-selected
+      background-color transparent !important
+
+      .ant-menu-title-content
+        background url('https://aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-web/%E5%B7%A6%E4%BE%A7%E5%AF%BC%E8%88%AA%E9%80%89%E4%B8%ADbg%402x.png') no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-web/%E5%B7%A6%E4%BE%A7%E5%AF%BC%E8%88%AA%E9%80%89%E4%B8%ADbg%402x.png') no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-web/%E5%B7%A6%E4%BE%A7%E5%AF%BC%E8%88%AA%E9%80%89%E4%B8%ADbg%402x.png') no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-web/%E5%B7%A6%E4%BE%A7%E5%AF%BC%E8%88%AA%E9%80%89%E4%B8%ADbg%402x.png') no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-web/%E5%B7%A6%E4%BE%A7%E5%AF%BC%E8%88%AA%E9%80%89%E4%B8%ADbg%402x.png') no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-web/%E5%B7%A6%E4%BE%A7%E5%AF%BC%E8%88%AA%E9%80%89%E4%B8%ADbg%402x.png') no-repeat
+        background-color transparent !important
+        background-size 100% 80%
+        color #14A9FF !important
+        margin-left -42px
+        background-position 0px 2px
+        height 100%
+
+        a
+          color #14A9FF
+          margin-left 42px
+
+          &:hover
+            color #14A9FF !important
+
+  .ant-menu-inline-collapsed
+    width auto
+
+  .ant-layout-sider-trigger
+    height auto
+
+  .ant-menu-submenu-arrow
+    // display none
+    width 12px
+    height 12px
+    background url('https://oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_down@2x-09a4ad.png') no-repeat center
+    background-size cover
+    transform translateY(-50%) !important
+
+    &:before, &:after
+      display none
+
+  .ant-menu-submenu-open.ant-menu-submenu-inline
+    .ant-menu-submenu-arrow
+      // display none
+      background-image url('https://aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-web/arrow12_up1%402x.png') // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-web/arrow12_up1%402x.png') // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-web/arrow12_up1%402x.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png') // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_up@2x-0d5c55.png')
+
+  .menu-item-inner
+    display flex
+    align-items center
+    font-size 14px
+    overflow hidden
+
+  .menu-icon
+    margin-left 12px
+    margin-right 6px
+    width 16px
+    height 16px
+    object-fit cover
+
+  .side-app-logo
+    position relative
+    display flex
+    justify-content flex-start
+    align-items center
+    padding-left 24px
+    height 56px
+    font-size 18px
+    overflow hidden
+    transition all 0.3s
+
+    &.collapsed
+      padding-left 16px
+
+    .app-logo
+      display inline-block
+      width 90px
+      height 32px
+      object-fit cover
+
+  &.collapsed
+    .app-logo
+      width 32px
+      height 32px
+
+  .side-app-menus
+    height calc(100vh - 120px)
+    overflow-y auto
+    overflow-x hidden
+    scrollbar-width none /* firefox */
+    -ms-overflow-style none /* IE 10+ */
+
+    &::-webkit-scrollbar
+      display none
+
+  .sider-trigger
+    display flex
+    justify-content flex-start
+    align-items center
+    padding-left 24px
+    height 64px
+    background #2A303C
+
+    img
+      width 16px
+      height 16px
+      object-fit cover
+
+  &.app-sider-bar-light
+    background #fff
+
+    .ant-menu
+      color #303133
+
+    .ant-menu-sub
+      background #fff
+
+      &.ant-menu-inline
+        background #fff
+
+    .ant-menu-submenu
+      color #303133
+
+    .ant-menu-dark
+      background #fff
+
+    .ant-menu-item
+      color #24282f
+
+      a
+        color inherit
+
+      &:hover
+        color #1E64F2
+
+    .ant-menu-item-selected
+      color #fff
+      background #1E64F2
+
+      &:hover
+        color #fff
+
+    // .ant-menu-submenu-arrow
+    // background-image url('https://oss-static.eaiot.cloud/aiot-factory-web/2022-03-07-arrow12_down@2x-165731.png')
+
+    // .ant-menu-submenu-open.ant-menu-submenu-inline
+    // .ant-menu-submenu-arrow
+    // background-image url('https://oss-static.eaiot.cloud/aiot-factory-web/2022-03-07-arrow12_up@2x-19475a.png')
+    .sider-trigger
+      background #fff
+
+.sider-bar-pop-menu
+  .ant-menu
+    border-radius 4px
+    min-width 132px
+
+  .ant-menu-item
+    margin 0 !important
+    padding 0 24px
+    height 44px
+    color rgba(255, 255, 255, 0.5)
+    line-height 44px
+
+    a
+      color inherit
+
+  .ant-menu-item-selected a
+    color #fff
+
+  &.sider-bar-pop-menu-light
+    .ant-menu-item
+      color #303133
+
+    .ant-menu-item-selected
+      color #fff
+      background #1E64F2

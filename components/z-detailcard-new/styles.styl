@@ -1,0 +1,92 @@
+.detail-card-wrapper-new
+  border-radius 4px
+  overflow hidden
+
+  .card-row
+    margin 0 !important
+
+  .card-row:first-child
+    border-top 1px solid #323E42
+
+  .card-row:last-child
+    margin-bottom -16px
+
+  .card-col
+    display flex
+    margin-bottom 0
+    line-height 1.5
+    border-bottom 1px solid #323E42
+    padding-left 0 !important
+
+    &:first-child
+      border-left 1px solid #323E42
+
+    &:last-child
+      border-right 1px solid #323E42
+
+  .card-label
+    position relative
+    color #EBECEC
+    font-size 14px
+    flex-shrink 0
+    border-right 1px solid #323E42
+    background #182529
+    padding 16px
+    display flex
+    align-items center
+    width 10em
+
+  .card-string-content
+    color #EBECEC
+    font-size 14px
+    // white-space nowrap
+    // overflow hidden
+    // text-overflow ellipsis
+    padding 16px
+    display flex
+    align-items center
+    // line-height 1.5
+
+  .card-image-content
+    .image-list
+      display flex
+      width 100%
+      padding 16px
+
+      .image-item
+        display flex
+        justify-content center
+        align-items center
+        width 140px
+        height 140px
+        border 1px solid #434748
+        background-color #F5F7FA
+        border-radius 4px
+
+        img
+          width 138px
+          height 138px
+          object-fit cover
+          border-radius 4px
+
+      .image-item:not(:last-child)
+        margin-right 16px
+
+    .image-empty
+      display flex
+      flex-direction column
+      justify-content center
+      align-items center
+      width 140px
+      height 140px
+      color #909399
+      font-size 12px
+      border 1px solid #434748
+      background-color #F5F7FA
+      border-radius 4px
+      margin 12px
+
+      img
+        margin-bottom 21px
+        width 58px
+        height 44px

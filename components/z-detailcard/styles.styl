@@ -1,0 +1,73 @@
+.detail-card-wrapper
+	.card-row:last-child
+		margin-bottom -16px
+
+	.card-col
+		display flex
+		margin-bottom 16px
+		line-height 1.5
+
+		.card-label
+			position relative
+			color #606266
+			font-size 14px
+			flex-shrink 0
+
+			&.required:before
+				content '*'
+				position absolute
+				top 2px
+				left 0
+				color #FF4D4F
+
+			&.label-padding
+				padding-left 10px
+
+		.card-string-content
+			color #303133
+			font-size 14px
+			white-space nowrap
+			overflow hidden
+			text-overflow ellipsis
+
+		.card-image-content
+			.image-list
+				display flex
+				width 100%
+
+				.image-item
+					display flex
+					justify-content center
+					align-items center
+					width 140px
+					height 140px
+					border 1px solid #DCDFE6
+					background-color #F5F7FA
+					border-radius 4px
+
+					img
+						width 138px
+						height 138px
+						object-fit cover
+						border-radius 4px
+
+				.image-item:not(:last-child)
+					margin-right 16px
+
+			.image-empty
+				display flex
+				flex-direction column
+				justify-content center
+				align-items center
+				width 140px
+				height 140px
+				color #909399
+				font-size 12px
+				border 1px solid #DCDFE6
+				background-color #F5F7FA
+				border-radius 4px
+
+				img
+					margin-bottom 21px
+					width 58px
+					height 44px

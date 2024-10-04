@@ -1,0 +1,238 @@
+.z-upload-wrapper
+  display inline-flex
+  align-items center
+
+  .upload-button
+    display inline-flex
+    align-items center
+    color #14A9FF
+    border-color: #14A9FF
+
+    &:hover
+      color #14A9FF
+      border-color: #14A9FF
+
+  .z-upload-main
+    display inline-flex
+    align-items center
+
+  .upload-button-wrapper
+    display inline-flex
+    align-items center
+    margin-right 24px
+
+  .type-card, .type-button
+    display inline-flex
+
+  .type-card
+    align-items flex-end
+    cursor pointer
+
+  .type-button
+    align-items center
+
+  .type-card-inner
+    position relative
+    display flex
+    justify-content center
+    align-items center
+    width 140px
+    height 140px
+    color #14A9FF
+    font-size 24px
+    border 1px dashed #0E5B87
+    border-radius 4px
+
+    .type-card-icon
+      position relative
+      display block
+      width 32px
+      height 32px
+
+      &:before, &:after
+        content ''
+        position absolute
+        top 50%
+        left 50%
+        width 32px
+        height 2px
+        background #14A9FF
+        transform translate(-50%, -50%)
+
+      &:after
+        transform translate(-50%, -50%) rotate(-90deg)
+
+  .upload-icon
+    display inline-block
+    margin-right 4px
+    width 16px
+    height 16px
+    line-height 16px
+
+    img
+      width 100%
+      height 100%
+      object-fit cover
+
+  .file-name
+    color #14A9FF
+    max-width 128px
+    overflow hidden
+    white-space nowrap
+    text-overflow ellipsis
+    cursor pointer
+
+  .file-delete
+    margin-left 4px
+    width 12px
+    height 12px
+    background url('https://aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-factory-web/delete20%402x.png') no-repeat center // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-factory-web/delete20%402x.png') no-repeat center // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-factory-web/delete20%402x.png') no-repeat center // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-factory-web/delete20%402x.png') no-repeat center
+    background-size cover
+    cursor pointer
+
+  .file-tip
+    margin-left 10px
+    color #909399
+    font-size 12px
+
+  .upload-preview
+    position relative
+    display inline-flex
+    margin-right 24px
+
+    .preview-delete
+      position absolute
+      top -10px
+      right -10px
+      width 20px
+      height 20px
+      cursor pointer
+      background url('https://aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-factory-web/delete20%402x.png') center no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-factory-web/delete20%402x.png') center no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-factory-web/delete20%402x.png') center no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-factory-web/delete20%402x.png') center no-repeat
+      background-size cover
+      z-index 1
+
+    .prev-wrapper
+      position relative
+      width 140px
+      height 140px
+      overflow hidden
+      border-radius 4px
+
+      .report-mask
+        position absolute
+        width 150px
+        height 150px
+        color #fff
+        font-size 20px
+        background rgba(0, 0, 0, 0.5)
+        z-index 112111
+        line-height 136px
+        text-align center
+        font-weight 500
+        border-radius 4px
+        cursor pointer
+
+    .ant-image
+      width 100%
+      height 100%
+
+    .preview-img
+      width 100%
+      height 100%
+      object-fit cover
+
+    .preview-tip
+      position absolute
+      left 0
+      bottom 0
+      width 100%
+      height 32px
+      color #fff
+      line-height 32px
+      text-align center
+      background rgba(0, 0, 0, 0.5)
+      z-index 1
+      cursor pointer
+
+.z-upload-image-wrapper, .z-upload-pdf-wrapper
+  display inline-flex
+  align-items center
+  flex-wrap wrap
+
+  .z-upload-button
+    margin-bottom 24px
+
+  .upload-preview
+    margin-bottom 24px
+
+.z-upload-pdf-wrapper
+  .prev-wrapper
+    border 1px solid #DCDFE6
+
+    &:hover
+      border 1px solid #14A9FF
+
+  .prev-wrapper-mask:hover
+    border 1px solid #DCDFE6
+
+  .report-mask
+    position absolute
+    width 150px
+    height 150px
+    color #fff
+    font-size 20px
+    background rgba(0, 0, 0, 0.5)
+    z-index 2
+    line-height 136px
+    text-align center
+    font-weight 500
+    border-radius 4px
+    cursor pointer
+
+  .report-wrapper
+    position absolute
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    width 100%
+    height 100%
+    color #606266
+
+    &:hover
+      color #14A9FF
+
+    .report-icon
+      margin-bottom 12px
+      width 70px
+      object-fit cover
+
+    .report-name
+      display -webkit-box
+      padding 0 12px
+      width 10em
+      font-size 12px
+      line-height 16px
+      text-align center
+      overflow hidden
+      text-overflow ellipsis
+      -webkit-line-clamp 2
+      -webkit-box-orient vertical
+      word-wrap break-word
+
+.error-table-wrapper
+  padding 24px
+
+.primary-btn
+  color #fff
+  padding 4px 24px
+  text-align center
+  border-radius 4px
+  background-color #14A9FF
+  height 100%
+  cursor pointer
+  display inline-block
+
+.drawer-wrapper
+  .ant-drawer-content-wrapper
+    height 60% !important

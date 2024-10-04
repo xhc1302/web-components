@@ -1,0 +1,48 @@
+.page-module
+  margin-top 32px
+
+  &:first-child
+    margin-top 0
+
+  .module-wrapper
+    display flex
+    align-items flex-end
+
+  .module-title
+    display inline-flex
+    align-items center
+
+    .title-icon
+      display inline-block
+      margin-right 6px
+      width 16px
+      height 16px
+      object-fit cover
+
+    .title-text
+      color #EBECEC
+      font-size 16px
+      line-height 16px
+      font-weight 500
+      display flex
+      align-items center
+
+      &::before
+        content ''
+        display inline-block
+        margin-right 6px
+        width 6px
+        height 18px
+        border-top 4px solid transparent
+        border-bottom 4px solid transparent
+        border-left 4px solid #14A9FF
+        border-right 4px solid transparent
+
+  .module-tip
+    margin-left 4px
+    color #AFB1B1
+    font-size 12px
+    line-height 12px
+
+  .module-body
+    margin-top 24px

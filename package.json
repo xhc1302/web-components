@@ -1,0 +1,28 @@
+{
+  "name": "@aiot/web-components",
+  "version": "1.0.0",
+  "description": "AIOT Web后台UI组件库",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aiot",
+  "license": "ISC",
+  "dependencies": {
+    "@loadable/component": "^5.15.0",
+    "classnames": "^2.3.1"
+  },
+  "devDependencies": {
+    "antd": "^4.16.11",
+    "react": "^17.0.2",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "peerDependencies": {
+    "antd": ">=4.14.0",
+    "react": ">=17.0.1",
+    "react-dom": ">=17.0.1",
+    "react-router-dom": ">=5.2.0",
+    "store": "^2.0.12"
+  }
+}

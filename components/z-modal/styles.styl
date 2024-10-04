@@ -1,0 +1,117 @@
+@keyframes spin
+  from
+    transform rotate(0)
+
+  to
+    transform rotate(360deg)
+
+.z-modal
+  .ant-modal-header
+    box-shadow inset 0px 0px 24px 0px #0E5B87
+    background-color transparent
+
+  .ant-modal-content
+    box-shadow inset 0px 0px 24px 0px #0E5B87 !important
+
+  .ant-modal-footer
+    background-color transparent
+    display: flex
+    justify-content: center
+
+  .modal-footer-inner
+    position relative
+    min-width 164px
+    height 48px
+    cursor pointer
+    background url('https://aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-factory-web/%E6%96%87%E5%AD%97button%E8%83%8C%E6%99%AF%402x.png') no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-factory-web/%E6%96%87%E5%AD%97button%E8%83%8C%E6%99%AF%402x.png') no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-factory-web/%E6%96%87%E5%AD%97button%E8%83%8C%E6%99%AF%402x.png') no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-factory-web/%E6%96%87%E5%AD%97button%E8%83%8C%E6%99%AF%402x.png') no-repeat // aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-factory-web/%E6%96%87%E5%AD%97button%E8%83%8C%E6%99%AF%402x.png') no-repeat
+    background-size cover
+    display flex
+    align-items center
+    justify-content space-around
+    padding 0 36px
+
+    .action-item
+      color #AFB1B1
+      padding: 0 8px
+
+    .cancel-active
+      color #14A9FF
+
+    .submit-item
+      color #14A9FF
+
+  .z-modal-icon-close
+    display inline-block
+    width 16px
+    height 16px
+
+    img
+      width 100%
+      height 100%
+      object-fit cover
+
+.z-modal-notice
+  .ant-modal-header
+    border-bottom none
+    text-align center
+
+  .ant-modal-body
+    padding 16px 16px 6px !important
+    color #AFB1B1
+    font-size 14px
+    text-align center
+    line-height 20px
+
+  .ant-modal-footer
+    border-top none
+
+  .z-modal-notice-footer
+    display flex
+    justify-content center
+    align-items center
+    padding 16px 0
+
+.z-modal-loading
+  position fixed
+  display flex
+  justify-content center
+  align-items center
+  top 0
+  left 0
+  width 100vw
+  height 100vh
+  z-index 1001
+  background transparent
+
+  .modal-inner
+    position relative
+    width 124px
+    height 124px
+    border-radius 16px
+    background rgba(0, 0, 0, 0.7)
+
+    .loading
+      position relative
+      margin 16px auto 8px
+      width 64px
+      height 64px
+      background url('https://oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading-801951.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading-801951.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading-801951.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading-801951.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading-801951.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading-801951.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading-801951.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading-801951.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading-801951.png') no-repeat center
+      background-size cover
+
+      &:after
+        content ''
+        position absolute
+        top 0
+        left 0
+        width 100%
+        height 100%
+        animation spin 1.5s linear infinite
+        background url('https://oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading_role-80f8f5.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading_role-80f8f5.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading_role-80f8f5.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading_role-80f8f5.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading_role-80f8f5.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading_role-80f8f5.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading_role-80f8f5.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading_role-80f8f5.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-12-14-loading_role-80f8f5.png') no-repeat center
+        background-size cover
+
+    &>p
+      margin-top 8px
+      color #fff
+      font-size 14px
+      line-height 20px
+      text-align center

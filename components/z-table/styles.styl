@@ -1,0 +1,80 @@
+.ant-table
+  // border-left 1px solid #323E42
+  // border-right 1px solid #323E42
+  background-color #090E0F !important
+
+  .ant-table-tbody > tr > td
+    transition background 0.3s
+    color #AFB1B1
+    border-width 0
+  .ant-table-thead th.ant-table-column-has-sorters:hover
+    background #182529
+  .ant-table-thead th
+    background #182529
+    color #EBECEC
+    border-bottom 0px solid #323E42
+
+    &:before
+      display none
+
+  .ant-table-tbody
+    &> tr.ant-table-row:hover
+      &> td
+        background #10191C
+
+  .ant-table-tbody > tr.ant-table-row-selected > td
+    background #10191C
+
+  .ant-table-footer
+    border-bottom 1px solid #F0F2F5
+
+  .ant-checkbox-checked .ant-checkbox-inner
+    background-color #00B42A
+
+  .ant-table-placeholder
+    background-color #10191C !important
+
+    &:hover
+      background-color #10191C !important
+
+.z-table-wrapper
+  .z-table-pagination
+    display flex
+    justify-content flex-end
+    margin 16px 0
+    flex-wrap wrap
+    row-gap 8px
+
+    .ant-select-selector
+      border 1px solid #323E42
+
+.z-table-light-row
+  background-color transparent
+
+  td.ant-table-column-sort
+    background #090E0F
+  .ant-table-cell-fix-right
+    background-color #090E0F
+
+.z-table-dark-row
+  background-color #10191C
+  td.ant-table-column-sort
+    background #10191C
+  .ant-table-cell-fix-right
+    background-color #10191C
+
+.z-border-table-wrapper
+  .ant-table
+    border-left 1px solid #323E42
+    border-right 1px solid #323E42
+    background-color #090E0F !important
+
+    .ant-table-tbody > tr > td
+      transition background 0.3s
+      color #AFB1B1
+      border 1px solid #323E42 !important
+
+    .ant-table-thead th
+      background #182529
+      color #EBECEC
+      border 1px solid #323E42 !important

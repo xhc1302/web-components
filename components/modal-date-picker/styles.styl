@@ -1,0 +1,107 @@
+.zmodal-date-picker
+  .date-picker-wrapper
+    display flex
+
+  .picker-item
+    position relative
+    flex 1
+
+  .z-date-picker-label
+    position absolute
+    top 50%
+    left 12px
+    color #303133
+    font-size 14px
+    line-height 22px
+    transform translateY(-45%)
+    z-index 1
+
+    &.label-end
+      left calc(50% + 14px)
+
+  .z-date-picker
+    width 100%
+
+  .date-picker-popup
+    top 39px !important
+    left -1px !important
+    padding 0
+
+  .zmodal-date-picker-footer
+    display flex
+    justify-content space-between
+    align-items center
+    padding 16px 48px 16px 24px
+
+    .footer-range
+      span
+        margin-right 32px
+        color #606266
+        font-size 14px
+        line-height 20px
+        cursor pointer
+
+        &:hover
+          color #1E64F2
+
+  .ant-picker-focused
+    box-shadow none
+
+  .ant-picker
+    padding-top 0
+    padding-bottom 0
+    border 1px solid #F0F2F5
+    border-bottom none
+    border-radius 0
+
+  .ant-picker-input
+    &>input
+      padding 4px 0
+      padding-left 80px
+      height 40px
+      border-radius 0
+
+      &:focus
+        border none
+
+    &:first-child
+      &>input
+        padding-left 70px
+        border-right 1px solid #F0F2F5
+
+  .ant-picker-range-separator
+    display none
+
+  .ant-picker-range-arrow
+    display none
+
+  .ant-picker-header
+    button
+      color #606266
+
+  .ant-picker-panel-container
+    box-shadow none
+    border-radius 0
+
+  .ant-picker-panel
+    border 1px solid #F0F2F5
+
+    &:first-child
+      border-right none
+      border-bottom-left-radius 4px
+
+      .ant-picker-header
+        position relative
+        margin-right -1px
+        border-right 1px solid #fff
+        z-index 1
+
+    &:last-child
+      border-bottom-right-radius 4px
+
+  .ant-picker-suffix
+  .ant-picker-clear
+    display none
+
+  .ant-modal-footer
+    padding 0

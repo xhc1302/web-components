@@ -1,0 +1,44 @@
+.aiot-app
+  height auto
+  overflow-x hidden
+  overflow-y auto
+  background-color #090E0F
+
+  .app-content-wrapper
+    background-color #090E0F !important
+
+  .app-booting
+    display flex
+    flex-direction column
+    justify-content center
+    align-items center
+    height 100vh
+    color #606266
+    font-size 14px
+    overflow hidden
+
+  .booting-icon
+    display block
+    margin-bottom 16px
+
+  .booting-icon-error
+    width 200px
+    height 200px
+    object-fit cover
+
+  .app-main
+    height 100vh
+    overflow hidden
+    background-color #090E0F !important
+
+    &.with-header-gap
+      height calc(100vh - 80px)
+
+  .app-content-wrapper
+    background-color #090E0F !important
+    margin-right 24px
+
+.notification-close-icon
+  width 16px
+  height 16px
+  object-fit cover

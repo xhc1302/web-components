@@ -1,0 +1,53 @@
+.app-breadcrumb
+  // margin 0 24px
+  // margin-right 24px
+  padding 12px 24px
+  min-width 930px
+  box-shadow inset 0px 0px 24px 0px #0E5B87
+  background-color #090E0F
+  border-radius 4px
+  display: flex
+  align-items: center
+  img
+    width 16px
+    height 16px
+    object-fit cover
+    margin-right 8px
+
+  .breadcrumb-item
+    display inline-flex
+    align-items center
+    color #AFB1B1
+    font-size 14px
+    line-height 20px
+    cursor default
+
+    &.breadcrumb-link
+      cursor pointer
+
+      &:hover
+        color #14A9FF
+
+      a
+        color inherit
+
+    &.breadcrumb-current
+      color #14A9FF
+
+  .breadcrumb-separator
+    margin 0 4px
+    width 12px
+    height 12px
+    background url('https://aiot-web-static.oss-cn-hangzhou.aliyuncs.com/aiot-factory-web/arrow12_right%402x.png') no-repeat center // oss-static.eaiot.cloud/aiot-factory-web/2021-07-27-arrow12_right@2x-18fef3.png') no-repeat center
+    background-size cover
+
+.alarm-link
+  margin-left auto
+  background: #FF4D4F;
+  box-shadow: 0px 0px 12px 0px #000000;
+  border-radius: 4px;
+  color: #EBECEC
+  padding: 6px 16px
+
+  &:hover
+    color: #EBECEC
