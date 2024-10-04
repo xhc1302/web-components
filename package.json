@@ -12,6 +12,10 @@
     "@loadable/component": "^5.15.0",
     "classnames": "^2.3.1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xhc1302/web-components.git"
+  },
   "devDependencies": {
     "antd": "^4.16.11",
     "react": "^17.0.2",
