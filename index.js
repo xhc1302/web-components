@@ -1,3 +1,4 @@
+import './reset.styl'
 import AuthRouter from './components/auth-router'
 import Loadable, { ReactLoadable } from './components/loadable'
 import PageModule from './components/page-module'
