@@ -2,6 +2,32 @@ const path = require('path');
 const theme = require('./theme')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+const moduleCSSLoader = {
+  loader: 'css-loader',
+  options: {
+    sourceMap: true,
+    importLoaders: 2,
+    modules: {
+      localIdentName: '[local]_[hash:base64:5]'
+    },
+  }
+}
+
+const modulePostCssLoader = {
+  loader: 'postcss-loader',
+  options: {
+    postcssOptions: {
+      plugins: [
+        ['postcss-flexbugs-fixes'],
+        ['autoprefixer', {
+          remove: false,
+          flexbox: 'no-2009'
+        }]
+      ]
+    }
+  },
+}
+
 module.exports = {
   entry: './index.js', // 入口文件
   output: {
@@ -24,11 +50,17 @@ module.exports = {
         }
       },
       {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
+      },
+      {
         //针对antd less样式
         test: /\.less$/,
+        exclude: /src/,
         use: [
-          'style-loader',
+          MiniCssExtractPlugin.loader,
           'css-loader',
+          modulePostCssLoader,
           {
             loader: 'less-loader',
             options: {
@@ -41,24 +73,30 @@ module.exports = {
         ]
       },
       {
+        //components下的css不用cssModule，不然没法复写
         test: /\.styl$/,
+        include: /components/,
         use: [
-          MiniCssExtractPlugin.loader,
           {
-            loader: 'css-loader',
+            loader: MiniCssExtractPlugin.loader,
             options: {
-              modules: true, // 启用 CSS Modules
-              sourceMap: true,
-              importLoaders: 2,
-              modules: false
-            }
+              esModule: true,
+            },
           },
+          'css-loader',
+          modulePostCssLoader,
           'stylus-loader'
         ]
       },
       {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader']
+        test: /\.styl$/,
+        exclude: /components/,
+        use: [
+          MiniCssExtractPlugin.loader,
+          moduleCSSLoader,
+          modulePostCssLoader,
+          'stylus-loader'
+        ]
       }
     ]
   },
