@@ -1,6 +1,6 @@
 {
   "name": "eaiot-web-components",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "AIOT Web后台UI组件库",
   "main": "dist/index.js",
   "module": "dist/index.js",
